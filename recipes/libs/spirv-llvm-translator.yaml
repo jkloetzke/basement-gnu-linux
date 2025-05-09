@@ -20,7 +20,7 @@ checkoutSCM:
     digestSHA256: d1b4a55dc457edbd9cc50d23583d4bedda9479176efcd34b3e20166bc7a4a562
     stripComponents: 1
 
-buildTools: [python3]
+buildTools: [python3, llvm]
 buildScript: |
     cmakeBuild $1 \
         -D CMAKE_SKIP_INSTALL_RPATH=ON \
